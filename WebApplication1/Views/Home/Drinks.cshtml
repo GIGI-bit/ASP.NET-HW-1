@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<WebApplication1.Entities.Drink>
+
+
+<!DOCTYPE>
+
+<body>
+    <h1>Drinks</h1>
+    <div style="margin:5vh">
+        @foreach (var item in Model)
+        {
+            <p>Id: @item.Id</p>
+            <p>Name: @item.Name</p>
+            <p>Type: @item.Type</p>
+            <hr />
+        }
+    </div>
+  
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model FoodListViewModel
+
+<!DOCTYPE >
+    
+    <body>
+        <h1>Drinks</h1>
+        <div style="margin:5vh">
+        @foreach(var item in Model.Drinks)
+        {
+            <p>Id: @item.Id</p>
+            <p>Name: @item.Name</p>
+            <p>Type: @item.Type</p>
+            <hr/>
+        }
+        </div>
+         <h1>Hot Meals</h1>
+        <div style="margin:5vh">
+        @foreach(var item in Model.HotMeals)
+        {
+            <p>Id: @item.Id</p>
+            <p>Name: @item.Name</p>
+            <p>Type: @item.Recipe</p>
+            <hr/>
+        }
+        </div>
+    <h1>Fast Food</h1>
+    <div style="margin:5vh">
+        @foreach (var item in Model.FastFoodList)
+        {
+            <p>Id: @item.Id</p>
+            <p>Name: @item.Name</p>
+            <p>Type: @item.Price</p>
+            <hr/>
+        }
+    </div>
+
+
+    </body>
+</html>
+
